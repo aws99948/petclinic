@@ -7,7 +7,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-		        sh 'uname'
+		        sh 'whoami'
                         sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.repository=registry.hub.docker.com/aws978707/petclinic --set image.tag=1'
               			
             }           
