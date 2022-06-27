@@ -9,7 +9,7 @@ pipeline {
                         sh 'pwd'
 		        sh 'whoami'
 		        sh 'source /var/lib/jenkins/.bash_profile'
-		        sh 'helm list'
+		        sh 'whereis helm'
                         sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.repository=registry.hub.docker.com/aws978707/petclinic --set image.tag=1'
               			
             }           
